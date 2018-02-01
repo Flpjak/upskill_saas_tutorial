@@ -17,20 +17,47 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+// font styles for headers 
 h1, h2, h3 {
-    font-family: 'mMonsterrat', sans-serif;
+    font-family: 'Monsterrat', sans-serif;
 }
 
+//background gradient
 .navbar, .home-callout{
-    
     background: #B2FEFA;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #0ED2F7, #B2FEFA);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #0ED2F7, #B2FEFA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
 .navbar {
     border:none;
 }
-
+.navbar-brand {
+    font-family:'Monsterrat', sans-serif;
+    font-weight:800;
+}
+//navbar styles
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav li a {
+    color:white;
+    &:hover {
+        color:white;
+        opacity:0.75;
+    }
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color:white;
+}
+.navbar-default .navbar-toggle {
+    border: 2px solid white;
+    &:hover, &:focus {
+        background-color:#0ED2F7;
+    }
+}
+//homepage header styles
 .home-callout{
     color:white;
     margin-top:-20px;
